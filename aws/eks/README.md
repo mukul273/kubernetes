@@ -15,5 +15,17 @@ eksctl create cluster --name=eksdemo1 \
 This will create the cluster without any nodegroup and nodes.
 
 `kubectl get nodes` should not return any nodes  
-`kubectl get clusters` should return the clusters list
+`eksctl get clusters` should return the clusters list  
+`eksctl get cluster --region=us-east-1` will give clusters in us-east-1 and respectively  
 
+##### Create & Associate IAM OIDC Provider for our EKS Cluster
+This is necessary for IAM roles to be used for k8s service accounts  
+
+`eksctl utils associate-iam-oidc-provider \
+    --region us-east-1 \
+    --cluster eksdemo1 \
+    --approve`  
+
+##### Create EC2 Keypair
+-- This keypair we will use it when creating the EKS NodeGroup.
+-- This will help us to login to the EKS Worker Nodes using Terminal.
