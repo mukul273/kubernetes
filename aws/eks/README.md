@@ -14,6 +14,6 @@ eksctl create cluster --name=eksdemo1 \
 
 This will create the cluster without any nodegroup and nodes.
 
-`kubectl get nodes` should not return any nodes
+`kubectl get nodes` should not return any nodes  
 `kubectl get clusters` should return the clusters list
 
