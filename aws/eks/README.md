@@ -27,5 +27,5 @@ This is necessary for IAM roles to be used for k8s service accounts
     --approve`  
 
 ##### Create EC2 Keypair
--- This keypair we will use it when creating the EKS NodeGroup.
--- This will help us to login to the EKS Worker Nodes using Terminal.
+-- This keypair we will use it when creating the EKS NodeGroup.  
+-- This will help us to login to the EKS Worker Nodes using Terminal.  
