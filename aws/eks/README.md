@@ -61,3 +61,18 @@ This is necessary for IAM roles to be used for k8s service accounts
                        --full-ecr-access \
                        --appmesh-access \
                        --alb-ingress-access`
+
+## Confirmation of Cluster
+`
+    # List EKS clusters
+    `eksctl get cluster`
+
+    # List NodeGroups in a cluster
+    eksctl get nodegroup --cluster=<clusterName>
+
+    # List Nodes in current kubernetes cluster
+    kubectl get nodes -o wide
+
+    # Our kubectl context should be automatically changed to new cluster
+    kubectl config view --minify
+`
