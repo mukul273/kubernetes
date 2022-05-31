@@ -62,7 +62,8 @@ This is necessary for IAM roles to be used for k8s service accounts
                        --appmesh-access \
                        --alb-ingress-access`
 
-## Confirmation of Cluster
+### Confirmation of Cluster
+
 `
     # List EKS clusters
     `eksctl get cluster`
