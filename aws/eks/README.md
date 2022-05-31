@@ -64,7 +64,7 @@ This is necessary for IAM roles to be used for k8s service accounts
 
 ### Confirmation of Cluster
 
-`
+```
     # List EKS clusters
     eksctl get cluster
 
@@ -76,4 +76,4 @@ This is necessary for IAM roles to be used for k8s service accounts
 
     # Our kubectl context should be automatically changed to new cluster
     kubectl config view --minify
-`
+```
