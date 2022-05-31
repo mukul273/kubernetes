@@ -66,7 +66,7 @@ This is necessary for IAM roles to be used for k8s service accounts
 
 `
     # List EKS clusters
-    `eksctl get cluster`
+    eksctl get cluster
 
     # List NodeGroups in a cluster
     eksctl get nodegroup --cluster=<clusterName>
