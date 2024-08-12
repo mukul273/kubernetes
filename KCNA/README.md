@@ -1,5 +1,7 @@
 
-ç
+# KCNA Course notes
+
+![Virtualization](./assets/images/virtualization.png)
 
 ![Cloud Computing](./assets/images/Cloud_computing.png)
 ![Cloud Native Computing](./assets/images/cloudnativecomputing.png)
